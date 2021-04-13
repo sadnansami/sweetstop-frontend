@@ -36,5 +36,6 @@
     "react-dom": "^17.0.1",
     "react-icons": "^4.2.0",
     "style-loader": "^2.0.0"
-  }
+  },
+  "cacheDirectories": [".next/cache"]
 }
