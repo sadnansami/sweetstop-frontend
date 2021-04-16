@@ -94,14 +94,14 @@ const Options = (props) => {
 				setShow={setShow}
 				toggleModal={toggleModal}
 			></OptionsCategory>
-			<h5 className="text-center">
+			<h2 className="text-center">
 				<span className="menuText">Menu >&nbsp;</span>
 				<a
 					href="#"
 					className="text-danger category"
 					onClick={toggleModal}
 				>{category}</a>
-			</h5>
+			</h2>
 			<Option
 				items={items}
 				itemsOptions={itemsOptions}

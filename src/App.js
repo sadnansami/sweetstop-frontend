@@ -72,6 +72,7 @@ const App = () => {
 						<img
 							className="logo"
 							src="/assets/LogoInvert.gif"
+							alt="SWEETSTOP Logo"
 						></img>
 					</Navbar.Brand>
 					<a
