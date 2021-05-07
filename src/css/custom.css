@@ -1,12 +1,12 @@
 @font-face {
 	font-family: "Briberra";
-	src: url("../fonts/Briberra.ttf") format("truetype");
+	src: url("/fonts/Briberra.woff2") format("woff2");
 	font-display: swap
 }
 
 @font-face {
 	font-family: "Quicksand";
-	src: url("../fonts/Quicksand.ttf") format("truetype");
+	src: url("/fonts/Quicksand.woff2") format("woff2");
 	font-display: swap
 }
 
@@ -52,6 +52,9 @@ img {
 	display:inline-block;
 }
 
+.table {
+	font-weight: 100;
+}
 
 .table-sm {
 	font-size: 0.75rem;
@@ -124,17 +127,31 @@ img {
 	text-shadow: 0 0.2rem 0.8rem rgba(0, 0, 0, 0.5) !important;
 }
 
+.menuText, .category {
+	text-transform: uppercase;
+	font-size: 1.6rem;
+	font-weight: 100;
+}
+
+.menuText {
+	text-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.7) !important;
+}
+
 .category {
-	text-shadow: 0 0.2rem 0.4rem rgba(199, 0, 0, 0.75);
+	color: #cc0000;
+	text-shadow: 0 0.2rem 0.4rem rgba(199, 0, 0, 1);
 	padding-bottom: 0.15em;
-	border-bottom: 0.09em solid #cc0000;
-	text-decoration: none;
+	text-decoration: none !important;
+}
+
+.category:hover {
+	color: #cc0000 !important;
 }
 
 .categoryName {
 	text-transform: uppercase;
 	font-size: 1.3rem;
-	text-decoration: none;
+	text-decoration: none !important;
 	transition: 0.3s;
 	-o-transition: 0.3s;
 	-moz-transition: 0.3s;

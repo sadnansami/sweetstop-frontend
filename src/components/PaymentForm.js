@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { Button, Container, Modal, InputGroup, FormControl, Row, Col } from "react-bootstrap";
-import { loadStripe } from "@stripe/stripe-js";
+import { loadStripe } from "@stripe/stripe-js/pure";
 import { Elements, CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
 import Basket from "./Basket";
 import axios from "axios";

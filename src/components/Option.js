@@ -1,6 +1,5 @@
 import React from "react";
-
-import { Button, Row, Col } from "react-bootstrap";
+import { Row, Col } from "react-bootstrap";
 
 const Option = (props) => {
 	const { items, category} = props;

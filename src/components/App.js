@@ -1,14 +1,14 @@
 import React, { useState, useEffect, lazy, Suspense } from "react";
+import dynamic from "next/dynamic";
 import { AiOutlineShopping } from "react-icons/ai";
 import { Button, Container, Navbar, Row, Col, Tooltip } from "react-bootstrap";
 import Options from "./Options";
 import Basket from "./Basket";
 import Footer from "./Footer"
-import axios from "axios";
-import PaymentForm from "./PaymentForm"
 
+const PaymentForm = dynamic(() => import("./PaymentForm"))
 
-const App = () => {
+const App = ({itemsData}) => {
 	const [items, setItems] = useState([]);
 	const [itemsAdded, setItemsAdded] = useState({});
 	const [finalPrice, setFinalPrice] = useState(0);
@@ -18,13 +18,7 @@ const App = () => {
 	}
 
 	useEffect(() => {
-		axios.get("https://azmmtest.herokuapp.com")
-			.then((res) => {
-				//res = JSON.parse(JSON.stringify(res))
-				setItems(res.data);
-			}).catch((error) => {
-				console.log(error); //Logs a string: Error: Request failed with status code 404
-			});
+		setItems(itemsData)
 	}, []);
 
 	const handleFinalPrice = (totalPrice) => {
@@ -123,5 +117,6 @@ const App = () => {
 		</>
 	);
 };
+
 
 export default App;

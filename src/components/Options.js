@@ -98,7 +98,7 @@ const Options = (props) => {
 				<span className="menuText">Menu >&nbsp;</span>
 				<a
 					href="#"
-					className="text-danger category"
+					className="category"
 					onClick={toggleModal}
 				>{category}</a>
 			</h2>

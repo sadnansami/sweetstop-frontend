@@ -1,5 +1,4 @@
 import React from "react";
-
 import { AiOutlineShopping } from "react-icons/ai";
 import { Button, Container, Row, Col } from "react-bootstrap";
 
